@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+    border-style: solid;
+    border-width: 9px;
+    border-color: gray;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+#layout {
+    background-color: gray;
+}
+.banner {
+    height: 60vh;
+    background-image: url(HB1.jpeg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(112, 110, 110, 0.6);
+}
+.banner h2 {
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid white;
+}
+section {
+    padding: 50px;
+}
+
+#end {
+    text-align: center;
+    background-color: whitesmoke;
+    width: auto;
+    height: auto;
+}
